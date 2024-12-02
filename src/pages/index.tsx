@@ -3,7 +3,6 @@ import { AiOutlinePlus, AiOutlineHeart, AiOutlineEnvironment, AiOutlineBell, AiO
 import Image from 'next/image';
 import { IoPersonOutline } from "react-icons/io5";
 
-
 // Dynamically load the Map component
 const Map = dynamic(() => import('./components/Map'), { ssr: false });
 
@@ -30,7 +29,6 @@ const HomePage = () => {
           <AiOutlineEnvironment className="h-6 w-6 text-gray-600 cursor-pointer" />
           <AiOutlineBell className="h-6 w-6 text-gray-600 cursor-pointer" />
           <IoPersonOutline className="h-6 w-6 text-gray-600 cursor-pointer" /> {/* Profile Icon */}
-
         </div>
       </header>
 
@@ -38,51 +36,50 @@ const HomePage = () => {
       <main className="mt-6 grid md:grid-cols-4 grid-cols-1 sm:gap-4">
         {/* Large Featured Image */}
         <div className="col-span-3 lg:ml-16">
-          <div className="h-80 bg-gray-300 rounded-md">
+          <div className="h-80 bg-gray-300 rounded-md overflow-hidden group">
             <Image
               src="/beach.jpg" // Replace with your featured image
               alt="Featured"
               width={600}
               height={400}
-              className="h-full w-full object-fit rounded-md"
+              className="h-full w-full object-fit rounded-md transition-transform duration-500 group-hover:scale-125"
             />
           </div>
         </div>
 
         {/* Sidebar with Featured Images */}
-        
         <div className="md:col-span-1 lg:ml-16 lg:mr-4 xl:mr-12">
-        <div className=''>
-          <h1 className='text-left mt-12 sm:mt-0 text-2xl'>Featured</h1>
-        </div>
-        <div className='space-y-4'>
-          <div className="sm:h-20 bg-gray-300 rounded-md">
-            <Image
-              src="/sol.webp" // Replace with your featured image
-              alt="Featured Thumbnail"
-              width={150}
-              height={100}
-              className="h-full w-full object-fit rounded-md"
-            />
+          <div>
+            <h1 className="text-left mt-12 sm:mt-0 text-2xl">Featured</h1>
           </div>
-          <div className="sm:h-20 bg-gray-300 rounded-md">
-            <Image
-              src="/louvree.jpg" // Replace with your featured image
-              alt="Featured Thumbnail"
-              width={150}
-              height={100}
-              className="h-full w-full object-fit rounded-md"
-            />
-          </div>
-          <div className="sm:h-20 bg-gray-300 rounded-md">
-            <Image
-              src="/eiffeltower.jpg" // Replace with your featured image
-              alt="Featured Thumbnail"
-              width={150}
-              height={100}
-              className="h-full w-full object-fit rounded-md"
-            />
-          </div>
+          <div className="space-y-4">
+            <div className="sm:h-20 bg-gray-300 rounded-md overflow-hidden group">
+              <Image
+                src="/sol.webp" // Replace with your featured image
+                alt="Featured Thumbnail"
+                width={150}
+                height={100}
+                className="h-full w-full object-fit rounded-md transition-transform duration-500 group-hover:scale-125"
+              />
+            </div>
+            <div className="sm:h-20 bg-gray-300 rounded-md overflow-hidden group">
+              <Image
+                src="/louvree.jpg" // Replace with your featured image
+                alt="Featured Thumbnail"
+                width={150}
+                height={100}
+                className="h-full w-full object-fit rounded-md transition-transform duration-500 group-hover:scale-125"
+              />
+            </div>
+            <div className="sm:h-20 bg-gray-300 rounded-md overflow-hidden group">
+              <Image
+                src="/eiffeltower.jpg" // Replace with your featured image
+                alt="Featured Thumbnail"
+                width={150}
+                height={100}
+                className="h-full w-full object-fit rounded-md transition-transform duration-500 group-hover:scale-125"
+              />
+            </div>
           </div>
         </div>
       </main>
