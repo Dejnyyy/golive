@@ -44,7 +44,7 @@ const HomePage = () => {
               alt="Featured"
               width={600}
               height={400}
-              className="h-full w-full object-cover rounded-md"
+              className="h-full w-full object-fit rounded-md"
             />
           </div>
         </div>
@@ -58,29 +58,29 @@ const HomePage = () => {
         <div className='space-y-4'>
           <div className="sm:h-20 bg-gray-300 rounded-md">
             <Image
-              src="/beach.jpg" // Replace with your featured image
+              src="/sol.webp" // Replace with your featured image
               alt="Featured Thumbnail"
               width={150}
               height={100}
-              className="h-full w-full object-cover rounded-md"
+              className="h-full w-full object-fit rounded-md"
             />
           </div>
           <div className="sm:h-20 bg-gray-300 rounded-md">
             <Image
-              src="/beach.jpg" // Replace with your featured image
+              src="/louvree.jpg" // Replace with your featured image
               alt="Featured Thumbnail"
               width={150}
               height={100}
-              className="h-full w-full object-cover rounded-md"
+              className="h-full w-full object-fit rounded-md"
             />
           </div>
           <div className="sm:h-20 bg-gray-300 rounded-md">
             <Image
-              src="/beach.jpg" // Replace with your featured image
+              src="/eiffeltower.jpg" // Replace with your featured image
               alt="Featured Thumbnail"
               width={150}
               height={100}
-              className="h-full w-full object-cover rounded-md"
+              className="h-full w-full object-fit rounded-md"
             />
           </div>
           </div>
