@@ -31,7 +31,7 @@ const HomePage = () => {
       </header>
 
       {/* Main Content */}
-      <main className="mt-6 grid grid-cols-4 gap-4">
+      <main className="mt-6 grid md:grid-cols-4 grid-cols-1 gap-4">
         {/* Large Featured Image */}
         <div className="col-span-3 lg:ml-16">
           <div className="h-64 bg-gray-300 rounded-md">
@@ -46,7 +46,12 @@ const HomePage = () => {
         </div>
 
         {/* Sidebar with Featured Images */}
-        <div className="col-span-1 space-y-4 lg:ml-16">
+        
+        <div className="md:col-span-1 lg:ml-16 mr-12">
+        <div className='space-y-0 mb-0 pb-0 gap-0'>
+          <h1 className='text-left space-y-0 gap-0'>Featured</h1>
+        </div>
+        <div className='space-y-4'>
           <div className="h-20 bg-gray-300 rounded-md">
             <Image
               src="" // Replace with your image
@@ -73,6 +78,7 @@ const HomePage = () => {
               height={100}
               className="h-full w-full object-cover rounded-md"
             />
+          </div>
           </div>
         </div>
       </main>
