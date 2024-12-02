@@ -47,7 +47,7 @@ const HomePage = () => {
 
         {/* Sidebar with Featured Images */}
         
-        <div className="md:col-span-1 lg:ml-16 mr-12">
+        <div className="md:col-span-1 lg:ml-16 lg:mr-4 xl:mr-12">
         <div className='space-y-0 mb-0 pb-0 gap-0'>
           <h1 className='text-left space-y-0 gap-0'>Featured</h1>
         </div>
