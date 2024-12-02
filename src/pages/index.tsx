@@ -1,6 +1,8 @@
 import dynamic from 'next/dynamic';
 import { AiOutlinePlus, AiOutlineHeart, AiOutlineEnvironment, AiOutlineBell, AiOutlineSearch } from 'react-icons/ai';
 import Image from 'next/image';
+import { IoPersonOutline } from "react-icons/io5";
+
 
 // Dynamically load the Map component
 const Map = dynamic(() => import('./components/Map'), { ssr: false });
@@ -27,6 +29,8 @@ const HomePage = () => {
           <AiOutlineHeart className="h-6 w-6 text-gray-600 cursor-pointer" />
           <AiOutlineEnvironment className="h-6 w-6 text-gray-600 cursor-pointer" />
           <AiOutlineBell className="h-6 w-6 text-gray-600 cursor-pointer" />
+          <IoPersonOutline className="h-6 w-6 text-gray-600 cursor-pointer" /> {/* Profile Icon */}
+
         </div>
       </header>
 
