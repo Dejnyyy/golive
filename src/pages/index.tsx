@@ -31,12 +31,12 @@ const HomePage = () => {
       </header>
 
       {/* Main Content */}
-      <main className="mt-6 grid md:grid-cols-4 grid-cols-1 gap-4">
+      <main className="mt-6 grid md:grid-cols-4 grid-cols-1 sm:gap-4">
         {/* Large Featured Image */}
         <div className="col-span-3 lg:ml-16">
-          <div className="h-64 bg-gray-300 rounded-md">
+          <div className="h-80 bg-gray-300 rounded-md">
             <Image
-              src="" // Replace with your featured image
+              src="/beach.jpg" // Replace with your featured image
               alt="Featured"
               width={600}
               height={400}
@@ -48,31 +48,31 @@ const HomePage = () => {
         {/* Sidebar with Featured Images */}
         
         <div className="md:col-span-1 lg:ml-16 lg:mr-4 xl:mr-12">
-        <div className='space-y-0 mb-0 pb-0 gap-0'>
-          <h1 className='text-left space-y-0 gap-0'>Featured</h1>
+        <div className=''>
+          <h1 className='text-left mt-12 sm:mt-0 text-2xl'>Featured</h1>
         </div>
         <div className='space-y-4'>
-          <div className="h-20 bg-gray-300 rounded-md">
+          <div className="sm:h-20 bg-gray-300 rounded-md">
             <Image
-              src="" // Replace with your image
+              src="/beach.jpg" // Replace with your featured image
               alt="Featured Thumbnail"
               width={150}
               height={100}
               className="h-full w-full object-cover rounded-md"
             />
           </div>
-          <div className="h-20 bg-gray-300 rounded-md">
+          <div className="sm:h-20 bg-gray-300 rounded-md">
             <Image
-              src="" // Replace with your image
+              src="/beach.jpg" // Replace with your featured image
               alt="Featured Thumbnail"
               width={150}
               height={100}
               className="h-full w-full object-cover rounded-md"
             />
           </div>
-          <div className="h-20 bg-gray-300 rounded-md">
+          <div className="sm:h-20 bg-gray-300 rounded-md">
             <Image
-              src="" // Replace with your image
+              src="/beach.jpg" // Replace with your featured image
               alt="Featured Thumbnail"
               width={150}
               height={100}
