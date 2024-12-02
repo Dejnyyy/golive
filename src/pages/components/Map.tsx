@@ -22,15 +22,15 @@ const PulsatingCircle = ({ coords }: { coords: [number, number] }) => {
     const interval = setInterval(() => {
       setRadius((prevRadius) => {
         // Toggle between increasing and decreasing the radius
-        if (isIncreasing && prevRadius >= 3000) {
+        if (isIncreasing && prevRadius >= 5000) {
           setIsIncreasing(false);
-        } else if (!isIncreasing && prevRadius <= 2000) {
+        } else if (!isIncreasing && prevRadius <= 3000) {
           setIsIncreasing(true);
         }
 
-        return isIncreasing ? prevRadius + 500 : prevRadius - 500;
+        return isIncreasing ? prevRadius + 100 : prevRadius - 100;
       });
-    }, 300); // Adjust the interval time for smoother animation
+    }, 100); // Adjust the interval time for smoother animation
 
     return () => clearInterval(interval); // Clean up on component unmount
   }, [isIncreasing]);
