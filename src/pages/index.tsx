@@ -12,7 +12,6 @@ const HomePage = () => {
       {/* Header */}
       <header className="flex items-center justify-between">
         <div className="font-bold text-xl">LOGO</div>
-
         {/* Search bar on larger screens, search icon on smaller screens */}
         <div className="flex-1 mx-4">
           <input
