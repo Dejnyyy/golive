@@ -42,7 +42,7 @@ const HomePage = () => {
               alt="Featured"
               width={600}
               height={400}
-              className="h-full w-full object-fit rounded-md transition-transform duration-500 group-hover:scale-125"
+              className="h-full w-full object-fit rounded-md transition-transform duration-500 group-hover:scale-110"
             />
           </div>
         </div>
@@ -87,7 +87,7 @@ const HomePage = () => {
       {/* Explore Section */}
       <section className="mt-6">
         <h2 className="text-lg font-bold mb-4 lg:ml-16">Explore</h2>
-        <div className="h-72 rounded-md">
+        <div className="h-72 rounded-md w-1/2">
           <Map />
         </div>
       </section>
