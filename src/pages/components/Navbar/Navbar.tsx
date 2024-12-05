@@ -7,18 +7,22 @@ const Navbar = () => {
       <Link href="/">
        
           <AiOutlineHome className="h-6 w-6 text-gray-600" />
+        
       </Link>
-      <Link href="/map">
+      <Link href="/mapPage">
        
           <AiOutlineCompass className="h-6 w-6 text-gray-600" />
+        
       </Link>
       <Link href="/liked">
        
           <AiOutlineHeart className="h-6 w-6 text-gray-600" />
+        
       </Link>
       <Link href="/add">
-       
+        
           <AiOutlinePlus className="h-6 w-6 text-gray-600" />
+        
       </Link>
     </div>
   );
